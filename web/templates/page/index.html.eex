@@ -1,0 +1,10 @@
+<div class="jumbotron">
+  <h2 class="Main-title"> Welcome to GetHub! </h2>
+  <p class="lead">A simple Application that gets<br /> lists of GitHub Repos by Organization Name.</p>
+  <p class="instruction">Please Enter the url for the Organization below:</p>
+
+  <input type="text" name="organization">
+  <button class="get__repos-button"> Get Repositories!</button>
+</div>
+</div>
+<footer></footer>
