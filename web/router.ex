@@ -1,22 +1,11 @@
 defmodule GetHub.Router do
-  use GetHub.Web, :router
 
-  pipeline :browser do
-    plug :accepts, ["html"]
-    plug :fetch_session
-    plug :fetch_flash
-    plug :protect_from_forgery
-    plug :put_secure_browser_headers
-  end
-
-  pipeline :api do
-    plug :accepts, ["json"]
-  end
+  use Phoenix.Router, :router
 
   scope "/", GetHub do
     pipe_through :browser # Use the default browser stack
 
-    get "/", PageController, :index
+    get "/", QueryController, :index
   end
 
   # Other scopes may use custom stacks.
